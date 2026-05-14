@@ -5,7 +5,7 @@
 }
 
 :root {
-    --main-color: #803a12;
+    --main-color: #ac5828;
     --accent-color: #F59E0B;
     --bg-color: #FFFBEB;
     --text-color: #1F2937;
@@ -21,6 +21,21 @@ body {
 
 h1, h2, h3 {
     color: var(--main-color);
+}
+
+button {
+    background-color: var(--main-color);
+    color: var(--card-color);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 #hero h2 {
@@ -45,6 +60,7 @@ section {
     max-width: 960px;
     margin: 0 auto;
     padding: 40px 20px;
+    
 }
 
 section h2 {
@@ -65,4 +81,14 @@ section h2 {
 
 #hero h2 {
     border-bottom: none;
+}
+
+/* Recommend */
+.Recommend {
+    border: 2px dashed var(--accent-color);
+    background-color: var(--card-color);
+    margin: 40px 0;
+    text-align: center;
+    padding: 24px;
+    border-radius: 12px;
 }
