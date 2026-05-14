@@ -1,33 +1,35 @@
-Pet {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 :root {
-    --main-color: #78350F;
-    /* Main color (dark brown) */
+    --main-color: #803a12;
     --accent-color: #F59E0B;
-    /* Accent color (orange) */
     --bg-color: #FFFBEB;
-    /* Background color for the entire page (cream) */
     --text-color: #1F2937;
-    /* Text color (dark gray) */
     --card-color: #FFFFFF;
-    /* White on cards and headers */
     --muted-color: #6B7280;
-    /* Discreet gray for the description and borders */
 }
 
 body {
-    background-color: var (--bg-color);
+    background-color: var(--bg-color);
     margin: 0;
     padding: 0;
-
 }
 
-successful {
-    background-color: var (--card-color);
+h1, h2, h3 {
+    color: var(--main-color);
+}
+
+#hero h2 {
+    color: var(--card-color);
+    border-bottom: none;
+}
+
+header {
+    background-color: var(--card-color);
     display: flex;
     justify-content: space-between;
     padding: 16px;
@@ -39,14 +41,28 @@ nav {
     gap: 20px;
 }
 
+section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section h2 {
+    font-size: 30px;
+    border-bottom: 3px solid var(--accent-color);
+}
+
 /* Hero */
 #hero {
-    background-image:
-        linear-gradient (rgba (0, 0, 0, 0.45), rgba (0, 0, 0, 0.45)),
-        /* Black semi-transparent (for easier reading of text) */
-        url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1600&h=900&fit=crop&auto=format&q=80");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1600&h=900&fit=crop&auto=format&q=80");
     padding: 140px 24px;
     background-size: cover;
-    color: var (--card-color);
+    background-position: center;
+    color: var(--card-color);
     text-align: center;
+    max-width: none;
+}
+
+#hero h2 {
+    border-bottom: none;
 }
