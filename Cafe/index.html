@@ -112,15 +112,19 @@
                 <div class="reserve-form">
                     <div class="form-row">
                         <label for="guestName">お名前</label>
-                        <input type="text"  name="guestName" id="guestName" placeholder="例：山田太郎">
+                        <input type="text" name="guestName" id="guestName" placeholder="例：山田太郎">
                     </div>
 
-                    <div class="form-row"> 
+                    <div class="form-row">
                         <label for="guestCount">人数</label>
-                        <input type="number"  name="guestCount" id="guestCount"  min="1" max="10">
+                        <input type="number" name="guestCount" id="guestCount" min="1" max="10">
                     </div>
-                    <button>予約する</button>
+
+                    <button onclick="reserve()">予約する</button>
                 </div>
+
+
+            <p id="reserveResult" class="reserve-result"></p>
             </div>
         </section>
         <!-- Access：営業時間・住所・電話 -->
@@ -136,7 +140,6 @@
         <p>&copy; 2026 Kalaw Cafe. All rights reserved.</p>
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
-
 </html>
